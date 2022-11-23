@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-blogspot-staging-35657-authRole",
+      "UnauthRoleArn": "arn:aws:iam::196918712865:role/amplify-blogspot-staging-35657-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::196918712865:role/amplify-blogspot-staging-35657-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-blogspot-staging-35657-deployment",
+      "UnauthRoleName": "amplify-blogspot-staging-35657-unauthRole",
+      "StackName": "amplify-blogspot-staging-35657",
+      "StackId": "arn:aws:cloudformation:us-east-1:196918712865:stack/amplify-blogspot-staging-35657/b76874f0-6562-11ed-be07-0eeac476d8ed",
+      "AmplifyAppId": "d22tmzpwhvi0wh"
+    }
+  }
+}

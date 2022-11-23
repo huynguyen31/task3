@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import '@aws-amplify/ui-react/styles.css';
+import config from './aws-exports.js';
+import { Amplify } from 'aws-amplify';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CreateBlog from './create-blog'
+import Home from './Home';
+
+Amplify.configure(config)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Routing page */}
+      <Router>
+        <Routes>
+          <Route path="/create-blog" element={<CreateBlog />}>
+          </Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+{/* 
+        <Routes>
+          <Route path="/:id" element={<BlogDetail/>}></Route>
+        </Routes> */}
+      </Router>
     </div>
   );
 }
